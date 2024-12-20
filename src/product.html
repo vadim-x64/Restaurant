@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/939/939694.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>
+        <a class="home-png-button" href="products.html">
+            <img src="../img/back.png" alt="">
+        </a>
+        <div class="lightbulb-container" id="lightbulb-container">
+            <audio id="light-switch-sound">
+                <source src="switch.mp3" type="audio/mpeg">
+            </audio>
+            <div class="lightbulb" id="lightbulb">
+                <img src="../img/light-on.png" id="lightbulb-image" alt="">
+            </div>
+        </div>
+        <div class="clock">
+            <div id="clock"></div>
+        </div>
+    </header>
+    <section>
+        <div id="product-details">
+            <div class="product-image">
+                <img id="product-image" onclick="openImageInNewTab(this.src)" alt="">
+            </div>
+            <div class="product-content">
+                <div class="product-info">
+                    <h1 id="product-name"></h1>
+                    <hr>
+                    <p id="product-description"></p>
+                    <p>Price: <span id="product-price"></span></p>
+                </div>
+                <div class="product-action">
+                    <div class="quantity-control">
+                        <button class="quantity-button decrease">-</button>
+                        <input type="num" inputmode="numeric" value="1" class="quantity-input">
+                        <button class="quantity-button increase">+</button>
+                    </div>
+                    <div class="add-to-cart-container">
+                        <button class="add-to-cart-button" id="add-to-cart-button">Buy item</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>

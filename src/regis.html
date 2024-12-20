@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign In</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/939/939694.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="regis.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Account</h1>
+        <a href="../index.html">
+            <p>✕</p>
+        </a>
+    </div>
+    <p class="line"></p>
+    <div class="regis">
+        <div class="input-group-user">
+            <div class="input-row">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-row">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+        </div>
+        <div class="input-group-user">
+            <div class="input-row">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="input-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+        <div class="input-group-user">
+            <div class="input-row">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-row">
+                <label for="password">Password</label>
+                <div class="password-input-container">
+                    <input type="password" id="password" name="password" required>
+                    <span id="togglePassword" onclick="togglePasswordVisibility()">🔒</span>
+                </div>
+                <button class="btn-a" type="button" onclick="generatePassword()">Generate Password</button>
+            </div>
+        </div>
+        <button class="btn-b" type="button" onclick="validateForm()">Registration</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="regis.js"></script>
+</body>
+</html>

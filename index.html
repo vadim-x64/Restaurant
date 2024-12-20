@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>◉ Pearl Restaurant</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/939/939694.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="navbar-brand text-center">
+                <div class="lightbulb-container" id="lightbulb-container">
+                    <audio id="light-switch-sound">
+                        <source src="src/switch.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="lightbulb light-switch" id="lightbulb">
+                        <img src="img/light-on.png" id="lightbulb-image" alt="">
+                    </div>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
+                aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mobileMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li><a class="btn-group-menu" href="src/info.html">Forum</a></li>
+                    <li><a class="btn-group-menu" href="src/about.html">About</a></li>
+                    <li><a class="btn-group-menu" href="src/terms.html">Terms</a></li>
+                    <li><a class="btn-group-menu" href="src/login.html">Sign In</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="menu-container">
+        <h2 id="menuTitle"></h2>
+    </div>
+    <div class="button-container">
+        <div class="category">
+            <a href="src/products.html" data-category="Burgers">
+                <img src="img/burgers.jpg" alt="">
+                <div class="category-name">Burgers</div>
+            </a>
+        </div>
+        <div class="category">
+            <a href="src/products.html" data-category="Sushi">
+                <img src="img/sushi.jpg" alt="">
+                <div class="category-name">Sushi</div>
+            </a>
+        </div>
+        <div class="category">
+            <a href="src/products.html" data-category="Pizza">
+                <img src="img/pizza.jpg" alt="">
+                <div class="category-name">Pizza</div>
+            </a>
+        </div>
+        <div class="category">
+            <a href="src/products.html" data-category="Snacks">
+                <img src="img/snacks.jpg" alt="">
+                <div class="category-name">Snacks</div>
+            </a>
+        </div>
+        <div class="category">
+            <a href="src/products.html" data-category="Soups">
+                <img src="img/soups.jpg" alt="">
+                <div class="category-name">Soups</div>
+            </a>
+        </div>
+        <div class="category">
+            <a href="src/products.html" data-category="Salads">
+                <img src="img/salads.jpg" alt="">
+                <div class="category-name">Salads</div>
+            </a>
+        </div>
+        <div class="category">
+            <a href="src/products.html" data-category="Steaks">
+                <img src="img/steaks.jpg" alt="">
+                <div class="category-name">Steaks</div>
+            </a>
+        </div>
+        <div class="category">
+            <a href="src/products.html" data-category="Wine">
+                <img src="img/wine.jpg" alt="">
+                <div class="category-name">Wine</div>
+            </a>
+        </div>
+        <div class="category">
+            <a href="src/products.html" data-category="Desserts">
+                <img src="img/desserts.jpg" alt="">
+                <div class="category-name">Desserts</div>
+            </a>
+        </div>
+        <div class="category">
+            <a href="src/products.html" data-category="Ice">
+                <img src="img/ice.jpg" alt="">
+                <div class="category-name">Ice</div>
+            </a>
+        </div>
+        <div class="category">
+            <a href="src/products.html" data-category="Drinks">
+                <img src="img/drinks.jpg" alt="">
+                <div class="category-name">Drinks</div>
+            </a>
+        </div>
+        <div class="category">
+            <a href="src/products.html" data-category="Milkshakes">
+                <img src="img/milkshakes.jpg" alt="">
+                <div class="category-name">Milkshakes</div>
+            </a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h4>LOGO</h4>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="src/info.html">Forum</a></li>
+                    <li><a href="src/about.html">About</a></li>
+                    <li><a href="src/terms.html">Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <button id="backToTopBtn" onclick="backToTop()">
+        <img src="https://cdn-icons-png.flaticon.com/128/3388/3388435.png" alt="">
+    </button>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="src/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+body {
+    font-family: 'Playpen Sans', cursive;
+    background: linear-gradient(to right, #76D6FF, #2AC5FD);
+    background-size: 400% 400%;
+    overflow-x: hidden;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    animation: fadeIn 1s ease-in-out, gradientBG 5s infinite;
+}
+
+h2 {
+    font-size: 72px;
+    color: #333;
+    text-align: center;
+    margin: 20px;
+}
+
+h4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 36px;
+}
+
+header {
+    background-color: #333;
+    height: 300px;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+.lightbulb img {
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    cursor: pointer;
+}
+
+.buttons {
+    justify-content: start;
+    margin: 200px 0 0 30px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.buttons a {
+    background: #95F3FF;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: color 0.3s;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    padding: 20px;
+    color: transparent;
+    font-size: 24px;
+}
+
+.buttons a:hover {
+    color: #00AAFF;
+    border-bottom-color: #00AAFF;
+}
+
+.restaurant-card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 0.5s ease;
+}
+
+.restaurant-card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-image-left {
+    width: 30%;
+    flex: 1;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card-image-right {
+    width: 30%;
+    flex: 1;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card-image-left {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-image-right {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-text {
+    margin: 20px;
+    flex: 1;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #333;
+    border: 5px solid #333;
+    padding: 10px;
+}
+
+#backToTopBtn {
+    cursor: pointer;
+    position: fixed;
+    color: #FFF;
+    padding: 0;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+#backToTopBtn img {
+    width: 70px;
+    filter: invert(100%);
+}
+
+#backToTopBtn:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 255);
+}
+
+.dark-background .lightbulb-img {
+    transform: rotate(180deg);
+}
+
+.dark-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+.dark-background .card-text {
+    color: #FFF;
+}
+
+.dark-background h2 {
+    color: #FFF;
+}
+
+.lifted {
+    transform: translateY(-20px);
+}
+
+.footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 20px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin: 50px;
+    font-size: 24px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer-social {
+    font-size: 36px;
+}
+
+.social-icon {
+    color: #FFF;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #00AAFF;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        height: 150px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+        margin: 100px 30px auto 30px;
+    }
+
+    .buttons a {
+        border: none;
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .lightbulb-container {
+        display: block;
+    }
+
+    .buttons a:hover {
+        color: transparent;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .lightbulb img {
+        width: 70px;
+    }
+
+    .restaurant-card {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .restaurant-card img {
+        padding: 5px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .restaurant-card p {
+        width: 100%;
+        border: none;
+    }
+
+    .card-text {
+        font-size: 18px;
+    }
+
+    #backToTopBtn img {
+        width: 50px;
+    }
+
+    #backToTopBtn {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    #backToTopBtn:hover {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    .lifted {
+        transform: translateY(0);
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .footer-links ul li a {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .social-icon {
+        margin: 20px;
+    }
+
+    .social-icon:hover {
+        color: #FFF;
+    }
+}

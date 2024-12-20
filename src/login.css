@@ -1,0 +1,237 @@
+body {
+    font-family: 'Playpen Sans', cursive;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to right, #76D6FF, #2AC5FD);
+    background-size: 400% 400%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: -1;
+    user-select: none;
+    animation: fadeIn 1s ease-in-out, gradientBG 5s infinite;
+}
+
+.home a:focus {
+    outline: none;
+}
+
+.user a:focus {
+    outline: none;
+}
+
+.input-group-text img:focus {
+    outline: none;
+}
+
+.socials a:focus {
+    outline: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    filter: invert(100%);
+    width: 30px;
+}
+
+.home img {
+    width: 30px;
+    filter: invert(100%);
+}
+
+.login-container {
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.form-group {
+    margin: 20px auto;
+}
+
+.form-control {
+    color: #000;
+    font-size: 20px;
+}
+
+.form-control:focus {
+    color: #000;
+}
+
+input {
+    font-size: 18px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-group-prepend span {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFF;
+}
+
+.input-group-text img {
+    width: 20px;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #FFF;
+    border-radius: 0;
+    color: #FFF;
+}
+
+.form-group input::placeholder {
+    color: #d8e3ff;
+}
+
+.form-group input:focus {
+    background-color: transparent;
+    color: #FFF;
+}
+
+.login-button {
+    color: #FFF;
+}
+
+.login-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease;
+    color: #FFF;
+}
+
+.login-button a:hover {
+    background-color: #007BFF;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 60px;
+}
+
+.socials img {
+    width: 50px;
+    ;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+hr {
+    border: 2px solid #FFF;
+    margin-bottom: 100px;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .login-container {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home {
+        display: flex;
+        align-items: center;
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+    }
+
+    .user img {
+        filter: invert(100%);
+    }
+
+    .home img {
+        width: 35px;
+        filter: invert(100%);
+    }
+
+    .user img {
+        width: 30px;
+    }
+
+    .avatar:hover {
+        transform: scale(1);
+    }
+
+    .login-button a:hover {
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,138 @@
+body {
+    font-family: 'Playpen Sans', cursive;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #76D6FF, #2AC5FD);
+    background-size: 400% 400%;
+    overflow-x: hidden;
+    animation: fadeIn 1s ease-in-out;
+    user-select: none;
+}
+
+h1 {
+    color: #333;
+}
+
+h4 {
+    color: #333;
+}
+
+p {
+    margin: 10px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    text-align: center;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#close-button {
+    top: 0;
+    right: 10px;
+    font-size: 24px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #333;
+    position: absolute;
+    cursor: pointer;
+}
+
+#clear-cart-button {
+    cursor: pointer;
+}
+
+#cart-items {
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.remove-item-button {
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: #980E00;
+    position: relative;
+    transition: transform 0.3s ease;
+    user-select: none;
+}
+
+.remove-item-button::before {
+    position: absolute;
+    width: 50%;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.remove-item-button:hover {
+    color: #FF0B00;
+}
+
+#cart-total {
+    color: #000;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.btn {
+    position: relative;
+    width: 100%;
+    margin: 5px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .back-link {
+        margin-bottom: 10px;
+    }
+
+    .remove-item-button {
+        color: #FF0B00;
+        width: 100%;
+    }
+
+    #close-button {
+        right: 10px;
+    }
+
+    #cart-total {
+        font-size: 18px;
+    }
+}

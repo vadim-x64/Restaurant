@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id="categoryInfo"></title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/939/939694.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+<header>
+    <div class="logo" id="burgers-logo">
+        <a href="../index.html">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/128/706/706942.png?uid=R77081381&ga=GA1.1.1848467976.1701626084&semt=ais"
+                    alt="">
+        </a>
+    </div>
+    <div class="logo" id="sushi-logo">
+        <a href="../index.html">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/128/9577/9577548.png?uid=R77081381&ga=GA1.1.1848467976.1701626084&semt=ais"
+                    alt="">
+        </a>
+    </div>
+    <div class="logo" id="pizza-logo">
+        <a href="../index.html">
+            <img src="https://cdn-icons-png.flaticon.com/128/534/534587.png" alt="">
+        </a>
+    </div>
+    <div class="logo" id="snacks-logo">
+        <a href="../index.html">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/128/6313/6313351.png?uid=R77081381&ga=GA1.1.1848467976.1701626084&semt=ais"
+                    alt="">
+        </a>
+    </div>
+    <div class="logo" id="soups-logo">
+        <a href="../index.html">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/128/13420/13420464.png?uid=R77081381&ga=GA1.1.1848467976.1701626084&semt=ais"
+                    alt="">
+        </a>
+    </div>
+    <div class="logo" id="salads-logo">
+        <a href="../index.html">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/128/4853/4853297.png?uid=R77081381&ga=GA1.1.1848467976.1701626084&semt=ais"
+                    alt="">
+        </a>
+    </div>
+    <div class="logo" id="steaks-logo">
+        <a href="../index.html">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/128/6763/6763390.png?uid=R77081381&ga=GA1.1.1848467976.1701626084&semt=ais"
+                    alt="">
+        </a>
+    </div>
+    <div class="logo" id="wine-logo">
+        <a href="../index.html">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/128/4698/4698327.png?uid=R77081381&ga=GA1.1.1848467976.1701626084&semt=ais"
+                    alt="">
+        </a>
+    </div>
+    <div class="logo" id="desserts-logo">
+        <a href="../index.html">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/128/8616/8616637.png?uid=R77081381&ga=GA1.1.1848467976.1701626084&semt=ais"
+                    alt="">
+        </a>
+    </div>
+    <div class="logo" id="ice-logo">
+        <a href="../index.html">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/128/3173/3173494.png?uid=R77081381&ga=GA1.1.1848467976.1701626084&semt=ais"
+                    alt="">
+        </a>
+    </div>
+    <div class="logo" id="drinks-logo">
+        <a href="../index.html">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/128/4880/4880479.png?uid=R77081381&ga=GA1.1.1848467976.1701626084&semt=ais"
+                    alt="">
+        </a>
+    </div>
+    <div class="logo" id="milkshakes-logo">
+        <a href="../index.html">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/128/5473/5473562.png?uid=R77081381&ga=GA1.1.1848467976.1701626084&semt=ais"
+                    alt="">
+        </a>
+    </div>
+    <div class="lightbulb-container" id="lightbulb-container">
+        <audio id="light-switch-sound">
+            <source src="switch.mp3" type="audio/mpeg">
+        </audio>
+        <div class="lightbulb" id="lightbulb">
+            <img src="../img/light-on.png" id="lightbulb-image" alt="">
+        </div>
+    </div>
+    <div class="clock">
+        <div id="clock"></div>
+    </div>
+</header>
+<div id="emptyCategoryMessage"></div>
+<div class="container" id="productContainer">
+    <div class="row justify-content-center" id="productRow"></div>
+</div>
+<div id="cart-icon">
+    <a href="cart.html">
+        <img src="https://cdn-icons-png.flaticon.com/128/4903/4903482.png" alt="">
+        <span id="cart-item-count"></span>
+    </a>
+</div>
+<button id="backToTopBtn" onclick="backToTop()">
+    <img src="https://cdn-icons-png.flaticon.com/128/3388/3388435.png" alt="">
+</button>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./products.js"></script>
+</body>
+</html>
