@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cartItemsDiv.appendChild(emptyCartMessage);
             cartTotalDiv.textContent = "";
             checkoutButton.textContent = "Go Back";
-            checkoutButton.href = "index.html";
+            checkoutButton.href = '../index.html';
         }
     }
     clearCartButton.addEventListener("click", (event) => {
