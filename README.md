@@ -4,7 +4,7 @@
   </a>
 </p>
 <p align="center">
-  <a href="https://youtu.be/U9MBohm-4t8">
+  <a href="https://youtu.be/U9MBohm-4t8" target="_blank>
     https://youtu.be/U9MBohm-4t8
   </a>
 </p>
